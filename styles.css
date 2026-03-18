@@ -90,7 +90,7 @@ iframe {
 .hero-copy {
   max-width: 60ch;
   font-size: 1.1rem;
-  color: rgba(255,255,255,0.9);
+  color: var(--green-900);
 }
 
 /* =========================
