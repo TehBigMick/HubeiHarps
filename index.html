@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hubei Harps GAA Club</title>
+  <meta name="description" content="Hubei Harps GAA Club brings Gaelic football, hurling, and community to Wuhan, China. New players and supporters are always welcome.">
 
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
-
 <body>
 
   <!-- ANNOUNCEMENT -->
   <div class="announcement-bar">
     <div class="container announcement-inner">
       <p>First Competitive Game - April 11th - NanChang</p>
-      <a href="#">View Fixtures</a>
+      <a href="#fixtures">View Fixtures</a>
     </div>
   </div>
 
@@ -23,26 +23,26 @@
   <header class="site-header">
     <div class="container nav-wrap">
 
-      <div class="brand">
+      <a class="brand" href="#top" aria-label="Hubei Harps home">
         <img src="assets/images/logo.png" alt="Hubei Harps Logo">
         <span>
           <strong>Hubei Harps</strong>
           <small>Wuhan GAA Club</small>
         </span>
-      </div>
+      </a>
 
-      <nav class="site-nav">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Teams</a>
-        <a href="#">Fixtures</a>
-        <a href="#">News</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
-        <a href="mailto:Michael@HubeiHarps.com" class="button button-primary nav-cta">Join the Club</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#teams">Teams</a>
+        <a href="#fixtures">Fixtures</a>
+        <a href="#news">News</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="mailto:Michael@HubeiHarps.com?subject=Hubei%20Harps%20-%20Join%20the%20Club" class="button button-primary nav-cta">Join the Club</a>
       </nav>
 
-      <button class="nav-toggle" aria-label="Toggle menu">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -51,123 +51,321 @@
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-content">
-      <p class="eyebrow">Irish Sport in China</p>
-      <h1>Hubei Harps GAA Club</h1>
-      <p class="hero-copy">
-        Gaelic football, hurling, and community in the heart of Wuhan. 
-        Open to experienced players, beginners, and supporters.
-      </p>
+  <main id="top">
 
-      <div class="hero-actions">
-        <a href="mailto:Michael@HubeiHarps.com" class="button button-primary">Join Training</a>
-        <a href="#" class="button button-secondary">View Fixtures</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- IDENTITY STRIP -->
-  <section class="identity-strip">
-    <div class="container identity-grid">
-      <article>
-        <strong>Wuhan, China</strong>
-        <span>Based in central China</span>
-      </article>
-      <article>
-        <strong>Irish GAA Club</strong>
-        <span>Football & Hurling</span>
-      </article>
-      <article>
-        <strong>New Players Welcome</strong>
-        <span>No experience needed</span>
-      </article>
-      <article>
-        <strong>Community Driven</strong>
-        <span>Sport & social life</span>
-      </article>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section">
-    <div class="container split-grid">
-
-      <div class="image-card">
-        <img src="assets/images/about-team.jpg" alt="Team photo">
-      </div>
-
-      <div class="text-card">
-        <h2>About the Club</h2>
-        <p>
-          We are a Wuhan-based Irish GAA club bringing together players and supporters through Gaelic games. 
-          Whether you’ve played before or are completely new, you’re welcome here.
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Irish Sport in China</p>
+        <h1>Hubei Harps GAA Club</h1>
+        <p class="hero-copy">
+          Gaelic football, hurling, and community in the heart of Wuhan.
+          Open to experienced players, complete beginners, and supporters.
         </p>
-        <a href="#" class="text-link">Read more →</a>
+
+        <div class="hero-actions">
+          <a href="mailto:Michael@HubeiHarps.com?subject=Hubei%20Harps%20-%20Join%20Training" class="button button-primary">Join Training</a>
+          <a href="#fixtures" class="button button-secondary">View Fixtures</a>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- TEAMS -->
-  <section class="section">
-    <div class="container">
-
-      <div class="section-head">
-        <h2>Our Teams</h2>
-        <p>We offer Gaelic football, hurling, and beginner-friendly sessions.</p>
+    <!-- IDENTITY STRIP -->
+    <section class="identity-strip">
+      <div class="container identity-grid">
+        <article>
+          <strong>Wuhan, China</strong>
+          <span>Based in central China</span>
+        </article>
+        <article>
+          <strong>Irish GAA Club</strong>
+          <span>Gaelic football and hurling</span>
+        </article>
+        <article>
+          <strong>New Players Welcome</strong>
+          <span>No experience needed</span>
+        </article>
+        <article>
+          <strong>Community Driven</strong>
+          <span>Sport, friendship, and social life</span>
+        </article>
       </div>
+    </section>
 
-      <div class="card-grid three-up">
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container split-grid">
 
-        <div class="info-card">
-          <img src="assets/images/team-gaelic-football.jpg" alt="Gaelic football">
-          <div class="info-card-body">
-            <h3>Gaelic Football</h3>
-            <p>Fast-paced, physical, and exciting.</p>
+        <div class="image-card">
+          <img src="assets/images/about-team.jpg" alt="Hubei Harps team group photo">
+        </div>
+
+        <div class="text-card">
+          <h2>About the Club</h2>
+          <p>
+            Hubei Harps is a Wuhan-based Irish GAA club bringing people together through Gaelic games.
+            We are building a strong community around Gaelic football, hurling, and shared club spirit.
+            Whether you have played for years or have never picked up a ball before, you are welcome here.
+          </p>
+          <p>
+            Our aim is simple: train hard, represent the club proudly, and give people in Wuhan a proper
+            chance to experience Irish sport and community.
+          </p>
+          <a href="#contact" class="text-link">Get in touch →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TEAMS -->
+    <section class="section" id="teams">
+      <div class="container">
+
+        <div class="section-head">
+          <h2>Our Teams</h2>
+          <p>We offer Gaelic football, hurling, and beginner-friendly sessions for anyone looking to get involved.</p>
+        </div>
+
+        <div class="card-grid three-up">
+
+          <article class="info-card">
+            <img src="assets/images/team-gaelic-football.jpg" alt="Gaelic football action">
+            <div class="info-card-body">
+              <h3>Gaelic Football</h3>
+              <p>Fast, physical, and high-energy. Open to returning players and those looking to compete.</p>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <img src="assets/images/team-hurling.jpg" alt="Hurling action">
+            <div class="info-card-body">
+              <h3>Hurling</h3>
+              <p>One of Ireland’s most iconic sports. Skill, speed, and serious intensity.</p>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <img src="assets/images/team-social-beginners.jpg" alt="Friendly beginner training">
+            <div class="info-card-body">
+              <h3>Beginners & Social</h3>
+              <p>Never played before? No problem. We welcome new players and anyone wanting to give it a go.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FIXTURES -->
+    <section class="section" id="fixtures">
+      <div class="container">
+
+        <div class="section-head">
+          <h2>Fixtures & Results</h2>
+          <p>Keep up with upcoming matches and the latest results as the club grows into competitive play.</p>
+        </div>
+
+        <div class="card-grid two-up">
+
+          <div class="panel">
+            <div class="panel-head">
+              <h3>Upcoming Fixtures</h3>
+            </div>
+
+            <div class="fixture-list">
+              <div class="fixture-item feature-fixture">
+                <div>
+                  <p class="fixture-label">Featured</p>
+                  <h4>Hubei Harps vs TBC</h4>
+                  <p>April 11th · NanChang</p>
+                </div>
+                <span class="tag">First Competitive Game</span>
+              </div>
+
+              <div class="fixture-item">
+                <div>
+                  <h4>Training Match</h4>
+                  <p>Details to be confirmed</p>
+                </div>
+                <span class="tag">Coming Soon</span>
+              </div>
+
+              <div class="fixture-item">
+                <div>
+                  <h4>Summer Tournament</h4>
+                  <p>Details to be confirmed</p>
+                </div>
+                <span class="tag">Planned</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="info-card">
-          <img src="assets/images/team-hurling.jpg" alt="Hurling">
-          <div class="info-card-body">
-            <h3>Hurling</h3>
-            <p>The fastest field sport in the world.</p>
+          <div class="panel">
+            <div class="panel-head">
+              <h3>Latest Results</h3>
+            </div>
+
+            <div class="fixture-list">
+              <div class="fixture-item">
+                <div>
+                  <h4>Club Launch Phase</h4>
+                  <p>Competitive results will appear here as fixtures begin.</p>
+                </div>
+                <span class="tag">New Club</span>
+              </div>
+
+              <div class="fixture-item">
+                <div>
+                  <h4>Training Sessions</h4>
+                  <p>Building fitness, skills, and numbers ahead of the first match.</p>
+                </div>
+                <span class="tag">In Progress</span>
+              </div>
+            </div>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN -->
+    <section class="section join-band" id="join">
+      <div class="container join-wrap">
+        <div>
+          <h2>Want to Join?</h2>
+          <p>
+            New to GAA? That’s fine. We welcome beginners, experienced players, and anyone looking for sport,
+            friendship, and a proper club atmosphere in Wuhan.
+          </p>
         </div>
 
-        <div class="info-card">
-          <img src="assets/images/team-social-beginners.jpg" alt="Beginners training">
-          <div class="info-card-body">
-            <h3>Beginners & Social</h3>
-            <p>No experience? No problem.</p>
+        <div class="join-actions">
+          <a href="mailto:Michael@HubeiHarps.com?subject=Hubei%20Harps%20-%20I%20want%20to%20join" class="button button-primary">Email the Club</a>
+          <a href="#contact" class="button button-secondary">Contact Info</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="section news" id="news">
+      <div class="container">
+
+        <div class="section-head">
+          <h2>Latest News</h2>
+          <p>Club updates, match build-up, travel, and social life.</p>
+        </div>
+
+        <div class="card-grid three-up">
+
+          <article class="news-card">
+            <img src="assets/images/news-1.jpg" alt="Club match or training action">
+            <div class="news-card-body">
+              <p class="news-meta">Club Update</p>
+              <h3>First Competitive Match Confirmed</h3>
+              <p>Hubei Harps will head to NanChang on April 11th for the club’s first competitive outing.</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img src="assets/images/news-2.jpg" alt="Team travel or tournament photo">
+            <div class="news-card-body">
+              <p class="news-meta">Travel</p>
+              <h3>Preparing for the Road</h3>
+              <p>Training and organisation continue as the club prepares for travel and matchday logistics.</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img src="assets/images/news-3.jpg" alt="Club social event">
+            <div class="news-card-body">
+              <p class="news-meta">Community</p>
+              <h3>Building the Club Off the Pitch Too</h3>
+              <p>Hubei Harps is about more than matches. Social events and club spirit matter as well.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <div class="container">
+
+        <div class="section-head">
+          <h2>Gallery</h2>
+          <p>Action, training, travel, and the people building the club.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <img src="assets/images/gallery-1.jpg" alt="Gaelic football action">
+          <img src="assets/images/gallery-2.jpg" alt="Hurling action">
+          <img src="assets/images/gallery-3.jpg" alt="Club social moment">
+          <img src="assets/images/gallery-4.jpg" alt="Training session">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SPONSORS -->
+    <section class="section" id="sponsors">
+      <div class="container">
+
+        <div class="section-head">
+          <h2>Our Sponsors</h2>
+          <p>Support from partners helps the club grow on and off the pitch.</p>
+        </div>
+
+        <div class="sponsor-row">
+          <div class="sponsor-box">
+            <img src="assets/images/sponsor-1.png" alt="Club sponsor">
           </div>
+
+          <div class="sponsor-box">Sponsor Space</div>
+          <div class="sponsor-box">Sponsor Space</div>
+          <div class="sponsor-box">Sponsor Space</div>
         </div>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SPONSORS -->
-  <section class="section">
-    <div class="container">
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
 
-      <div class="section-head">
-        <h2>Our Sponsors</h2>
-      </div>
+        <div class="section-head">
+          <h2>Contact & Location</h2>
+          <p>Get in touch to join training, ask questions, or follow the club.</p>
+        </div>
 
-      <div class="sponsor-row">
+        <div class="split-grid contact-grid">
 
-        <!-- NEW SPONSOR IMAGE -->
-        <div class="sponsor-box">
-          <img src="assets/images/sponsor-1.png" alt="Club Sponsor">
+          <div class="text-card">
+            <h2>Get Involved</h2>
+            <p><strong>Email:</strong> <a href="mailto:Michael@HubeiHarps.com">Michael@HubeiHarps.com</a></p>
+            <p><strong>Location:</strong> Wuhan, China</p>
+            <p>
+              Training venue details can be shared directly. Whether you are a player, beginner,
+              supporter, or potential sponsor, get in touch and we’ll point you in the right direction.
+            </p>
+            <a href="mailto:Michael@HubeiHarps.com?subject=Hubei%20Harps%20-%20Contact" class="button button-primary">Email Now</a>
+          </div>
+
+          <div class="map-card">
+            <iframe
+              title="Map of Wuhan"
+              src="https://www.google.com/maps?q=Wuhan%20China&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
         </div>
 
       </div>
+    </section>
 
-    </div>
-  </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -179,13 +377,14 @@
       </div>
 
       <div class="footer-nav">
-        <a href="#">Home</a>
-        <a href="#">Fixtures</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#fixtures">Fixtures</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <p class="footer-copy">
-        © 2026 Hubei Harps GAA Club
+        © 2026 Hubei Harps GAA Club. Proudly representing Gaelic games in Wuhan.
       </p>
 
     </div>
