@@ -27,7 +27,6 @@ img {
   --gold: #D4AF37;
   --dark: #0a0a0a;
   --light: #ffffff;
-  --off-white: #f0f0f0;
 }
 
 /* =========================
@@ -65,7 +64,7 @@ img {
 }
 
 .site-nav a {
-  color: #f5f5f5;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -80,7 +79,7 @@ img {
 }
 
 /* =========================
-   HERO (UPDATED COLOURS)
+   HERO (ONLY TEXT COLOUR CHANGED)
 ========================= */
 .hero {
   position: relative;
@@ -90,10 +89,10 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: var(--off-white);
+  color: #111; /* changed from white */
 }
 
-/* DARK OVERLAY */
+/* overlay still intact */
 .hero::before {
   content: "";
   position: absolute;
@@ -108,20 +107,14 @@ img {
   padding: 20px;
 }
 
-/* GOLD HEADLINE */
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 15px;
-  color: var(--gold);
-  text-shadow: 0 4px 12px rgba(0,0,0,0.8);
 }
 
-/* SOFTER TEXT */
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 25px;
-  color: #e0e0e0;
-  text-shadow: 0 3px 10px rgba(0,0,0,0.8);
 }
 
 .hero-buttons a {
@@ -139,8 +132,8 @@ img {
 
 .btn-secondary {
   background: transparent;
-  border: 2px solid var(--gold);
-  color: var(--gold);
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 /* =========================
@@ -199,12 +192,12 @@ img {
 }
 
 /* =========================
-   JOIN SECTION (UPDATED)
+   JOIN SECTION (ONLY TEXT COLOUR CHANGED)
 ========================= */
 .join-section {
   position: relative;
   background: url("assets/images/join-bg.jpg") center/cover no-repeat;
-  color: var(--off-white);
+  color: #111; /* changed from white */
   text-align: center;
   padding: 80px 20px;
 }
@@ -219,16 +212,6 @@ img {
 .join-content {
   position: relative;
   z-index: 1;
-}
-
-.join-section h2 {
-  color: var(--gold);
-  text-shadow: 0 3px 10px rgba(0,0,0,0.8);
-}
-
-.join-section p {
-  color: #e0e0e0;
-  text-shadow: 0 3px 10px rgba(0,0,0,0.8);
 }
 
 /* =========================
@@ -268,7 +251,7 @@ img {
 ========================= */
 .footer {
   background: var(--green);
-  color: #f5f5f5;
+  color: #fff;
   text-align: center;
   padding: 20px;
 }
