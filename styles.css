@@ -79,7 +79,7 @@ img {
 }
 
 /* =========================
-   HERO (ONLY TEXT COLOUR CHANGED)
+   HERO (FIXED)
 ========================= */
 .hero {
   position: relative;
@@ -89,10 +89,10 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #111; /* changed from white */
+  color: #fff;
 }
 
-/* overlay still intact */
+/* DARK OVERLAY */
 .hero::before {
   content: "";
   position: absolute;
@@ -100,6 +100,7 @@ img {
   background: rgba(0, 0, 0, 0.6);
 }
 
+/* CONTENT ABOVE OVERLAY */
 .hero-content {
   position: relative;
   z-index: 1;
@@ -110,11 +111,13 @@ img {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 15px;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.8);
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 25px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.8);
 }
 
 .hero-buttons a {
@@ -192,16 +195,17 @@ img {
 }
 
 /* =========================
-   JOIN SECTION (ONLY TEXT COLOUR CHANGED)
+   JOIN SECTION (FIXED)
 ========================= */
 .join-section {
   position: relative;
   background: url("assets/images/join-bg.jpg") center/cover no-repeat;
-  color: #111; /* changed from white */
+  color: #fff;
   text-align: center;
   padding: 80px 20px;
 }
 
+/* DARK OVERLAY */
 .join-section::before {
   content: "";
   position: absolute;
@@ -212,6 +216,11 @@ img {
 .join-content {
   position: relative;
   z-index: 1;
+}
+
+.join-section h2,
+.join-section p {
+  text-shadow: 0 3px 10px rgba(0,0,0,0.8);
 }
 
 /* =========================
